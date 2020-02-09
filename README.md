@@ -23,14 +23,14 @@ Check if the topic is listed in result of below command
 `spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.4 --master local[*] data_stream.py`
 
 ### Kafka Console Consumer Output
-
+![Kafka Console Consumer Output](https://github.com/VenkatRepaka/sf-crime-data-project-files/blob/master/kafka-console-consumer.png)
 
 ### Spark job result
 1. Aggregated data result
-
+![Aggregated Data](https://github.com/VenkatRepaka/sf-crime-data-project-files/blob/master/crime_count.png)
 
 2. Streaming and Static Data frames join result
-
+![Join Result](https://github.com/VenkatRepaka/sf-crime-data-project-files/blob/master/join.png)
 
 ### Questions
 1. How did changing values on the SparkSession property parameters affect the throughput and latency of the data?
