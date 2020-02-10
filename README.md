@@ -33,7 +33,11 @@ Check if the topic is listed in result of below command
 ![Join Result](https://github.com/VenkatRepaka/sf-crime-data-project-files/blob/master/join.png)
 
 ### Questions
-1. How did changing values on the SparkSession property parameters affect the throughput and latency of the data?
+1. How did changing values on the SparkSession property parameters affect the throughput and latency of the data?\s\s
 Ans. There is an increase or decrease in `processedRowsPerSecond`. Higher the number better is the performance
 
-2. What were the 2-3 most efficient SparkSession property key/value pairs? Through testing multiple variations on values, how can you tell these were the most optimal?
+2. What were the 2-3 most efficient SparkSession property key/value pairs? Through testing multiple variations on values, how can you tell these were the most optimal?\s\s
+Ans. Below mentioned properties could improve performance\s\s
+1. spark.sql.shuffle.partitions
+2. spark.default.parallelism
+3. spark.dynamicAllocation.enabled
